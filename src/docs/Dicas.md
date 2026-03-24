@@ -33,3 +33,6 @@
     2: git add.
     3: git commit -m "menssagem"
     e para subir "git push"
+
+$ git checkout -b dev
+chama o dev
