@@ -38,4 +38,62 @@ const transacaoAutorizada = login === 1 && token >= 10;
 
 console.log("Transação autorizada com sucesso",transacaoAutorizada)
 
-//EXERCICIO 3
+//ESTRUTURA CONDICIONAL
+//if
+if(true){
+    console.log("É verdadeiro")
+}
+//if/else
+let nome ="Fiap"
+if(nome == "Fiap"){
+    console.log("Nome verdadeiro")
+}else{
+    console.log("Nome errado")
+}
+//if encadeado ou aninhado
+
+let idade=61;
+if(idade <= 13){
+    console.log("É uma criança")
+}else if(idade>13 && idade <=18){
+    console.log("É um adolescente")
+}else if(idade > 18 && idade < 60){
+    console.log("É um adulto")
+}else{
+    console.log("É um idoso")
+}
+
+//SWITCH CASE
+let times="santos";
+
+switch(times){
+    case "santos":
+        console.log("Um time idoso")
+        break;
+    case "são paulo":
+        console.log("Time panetone")
+        break;
+    case "palmeiras":
+        console.log("SEM MUNDIAL")
+        break;
+    case "corinthians":
+        console.log("Um time de tradição")
+        break;
+    default:
+        console.log("É tão ruim quanto a seleção brasileira")
+}
+
+//ternaria
+
+let salario=100;
+let resultado = salario == 100 ? "Salário certo":"Salário errado"
+console.log(resultado)
+
+let usuario="Fiap";
+let userLogado= usuario === "Fiap"?"Logado com sucesso":"Usuário inválido"
+console.log(userLogado)
+
+function verificarParImpar(numero){
+    return numero % 2 === 0 ? "PAR":"IMPAR";
+}
+console.log(verificarParImpar(35))
