@@ -104,23 +104,68 @@
 // código vai ser executado 
 
 // DECLARAÇÃO, OPERAÇÃO E INCREMNTO
-for(let i=4; i<=5; i++){
-    console.log("Número: ",i);
-}
-// for para array
+// for(let i=4; i<=5; i++){
+//     console.log("Número: ",i);
+// }
+// // for para array
 
-const linguagens = ["Java", "Pyrhon", "C#", "PHP"];
+// const linguagens = ["Java", "Pyrhon", "C#", "PHP"];
 
-for(let i=0; i< linguagens.length;i++){
-    console.log("Linguagem",i ,":", linguagens[i]);
-}
+// for(let i=0; i< linguagens.length;i++){
+//     console.log("Linguagem",i ,":", linguagens[i]);
+// }
 
-const tecnologias = ["JS", "HTML", "CSS"]
+// const tecnologias = ["JS", "HTML", "CSS"]
 
-for(const tech of tecnologias){
-    console.log("Estudando", tech)
-}
-const carros = {marca:"Volks", modelo:"Fusca", ano:1980};
-for(let dados in carros){
-    console.log(dados, ":", carros[dados]);
-}
+// for(const tech of tecnologias){
+//     console.log("Estudando", tech)
+// }
+// const carros = {marca:"Volks", modelo:"Fusca", ano:1980};
+// for(let dados in carros){
+//     console.log(dados, ":", carros[dados]);
+// }
+
+// // while - Diferente do for, no while não sabemos a quantidade de vezes que o sódigo vai executar
+// let i=1;
+
+// while(i<=8){
+//     console.log("contagem", i);
+//     i++;
+// }
+// // Declaração indefinida
+// let numero;
+
+// while(numero !== "0"){
+//     numero = prompt("Digite um número( ou 0 para sair)");
+//     console.log("Eu sei o que você digitou", numero);
+//     numero++;
+// }
+// console.log("Fim do Programa")
+
+//  do while (Executa ao menos uma vez)
+// let contador =10;
+// do {
+//     console.log("Vai executar pelo menos uma vez");
+//     contador ++;
+// }while(contador <=5);
+
+// Declaração da variável undefined
+
+// Gerar um número alatório entre 1 e 10
+
+let palpite; 
+const sorteio = Math.floor(Math.random() * 10);
+do{
+    palpite = parseInt(prompt("Digite um número entre 1 e 10")+1);
+
+    if(isNaN(palpite)){
+        alert("Saindo do jogo")
+        break;
+    }
+    if(palpite !== sorteio){
+        alert("Você perdeu R$100,00")
+    }
+} while(palpite !== sorteio)
+    if(palpite === sorteio){
+        alert("Parabéns, você acertou e ganhou R$100,00")
+    }
